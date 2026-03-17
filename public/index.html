@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Kuala Check / Home</title>
+    <link rel="stylesheet" href="./css/variable.css" />  
+    <link rel="stylesheet" href="./css/bootstrap-icons-1.13.1/bootstrap-icons.css" />
+    <link  rel="stylesheet" href="./css/index.css" />
+    
+</head>
+<body>
+    
+    <header>
+      <section class="logo">
+        <img id="logo" title="Kuala Check / Inicío" src="image/logo.png" alt="" />
+        <h1>
+          Kuala Check
+        </h1>
+      </section>
+      <nav>
+        <ul id="nav">
+          <!-- Atribuimos "id" aos elemntos acessar no Javascript e poder diferenviar -->
+      
+          <li id="init" class="active navigator">
+             <i class="bi bi-house"></i> 
+             Início 
+          </li>
+          <li id="about" class="navigator">
+             <i class="bi bi-info-circle"></i> 
+             Sobre  
+          </li>
+          <li id="more" class="navigator">
+            <i class="bi bi-question-circle"></i>
+             Como funciona 
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- 
+      Card principal 
+      -->
+      
+      <section class="init render" id="homePage">
+        <h1>
+          Kuala Check - Sistema de Monitoramento Ambiental
+        </h1>
+        <p>
+          Plataforma capaz de monitorar o meio ambiente de uma forma eficiente em tempo real.
+        </p>
+        <div>
+          <button type="button" id="home-login" class="navigator">
+            Começar <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+      
+      <!-- 
+      Card Sobre Nós 
+      -->
+      <section class="about" id="aboutPage">
+        <div>
+          <img src="./image/logo.png" alt="Kuala logo" />
+        </div>
+        <div>
+          <h1>
+            Sobre Nós
+          </h1>
+          <p>
+            Kuala Check é um projecto de Monitoramento ambiental que usa Tecnologia para cuidar do ambiente. Inspirado no meio rural, acompanha clima, solo e água para tomada de decisões sutentáveis. 
+          </p>
+          <i>
+              Kuala Check - monitorar hoje para preservar amanhã.
+          </i>
+        </div>
+      </section>
+      
+      <section class="more" id="func">
+        <div>
+          <h1>
+            Como funciona ? 
+          </h1>
+        </div>
+          <span class="loading">
+            
+          </span>
+        <div class="cardsFunc">
+          <!-- Efeito de loading -->
+          
+          
+        </div>
+      </section>
+      
+      <!-- Formulário de login -->
+      <section class="home-login">
+        <form class="login-form">
+          <i class="bi bi-person-circle top-icon-form">
+          </i>
+          
+          <label>
+              <i class='bi bi-person'></i>
+              <input type='text' placeholder="E-mail / Id" id="email" required maxlength="60" minLength="6"/>
+          </label>
+          
+          <label>
+              <i class='bi bi-lock'></i>
+              <input type='password' placeholder="password" id="password" required maxlength="16" minLength="4"/>
+          </label>
+          
+          <button type="submit" class="start-login text-danger">
+            Login 
+          </button>
+        </form>
+      </section>
+
+
+      <!-- Section do PErfil -->
+
+      <section class="perfil">
+        <h1 class="text-success">
+          Perfil
+        </h1>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2026 Kuala Check - Sistema de Monitoramento Ambiental | Todos direitos reservados
+      </p>
+    </footer>
+    
+    <!-- Linkando os arquivos Js -->
+    <script src="js/index.js"></script>
+</body>
+</html>
