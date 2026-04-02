@@ -7,7 +7,7 @@ const { Login } = require('./routes/actions');
 
 // Configiração do servidor
 const app = express()
-const PORT = 3000
+const PORT = 4000
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
@@ -24,6 +24,6 @@ app.listen(PORT, () => {
   console.log('Conectando', '.'.repeat(40));
   console.log('•'.repeat(50));
   console.log('Servidor Inicializado! ', '✓'.repeat(27));
-  console.log('Acessivel em http://localhost:3000');
+  console.log('Acessivel em http://localhost:4000');
   
 })
